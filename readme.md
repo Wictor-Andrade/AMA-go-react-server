@@ -2,22 +2,17 @@
 
 Siga os passos abaixo para configurar e rodar o projeto:
 
-1. **Subir os serviços com Docker Compose**: Certifique-se de que o Docker e o Docker Compose estão instalados e configurados. Para subir os serviços, execute:
-
+1. **Subir os serviços com Docker Compose**: 
     ```bash
     docker-compose up -d
     ```
 
-2. **Instalar o Tern**: Para gerenciar as migrações do banco de dados, você precisará do `tern`. Instale o `tern` usando Go:
-
+2. **Instalar o Tern**: 
     ```bash
     go install github.com/jackc/tern@latest
     ```
 
-    Isso instalará o `tern` globalmente no seu sistema.
-
-3. **Executar as Migrações**: Depois de instalar o `tern`, você pode rodar as migrações do banco de dados com o seguinte comando:
-
+3. **Executar as Migrações**:
     ```bash
-    tern migrate
+    go run .\cmd\tools\terndotenv\main.go  
     ```
