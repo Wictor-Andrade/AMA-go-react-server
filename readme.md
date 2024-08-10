@@ -16,3 +16,8 @@ Siga os passos abaixo para configurar e rodar o projeto:
     ```bash
     go run .\cmd\tools\terndotenv\main.go  
     ```
+
+4. **Instalar SQLC**:
+    ```bash
+    go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest
+    ```
